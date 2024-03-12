@@ -1,0 +1,97 @@
+<div>
+    <header>
+          
+        <mat-toolbar style=" margin-bottom: 0px;">
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+              <mat-icon >menu</mat-icon>
+            </button>
+            <span style="color: #202020; font-size: large;"><b>Class List</b></span>
+         
+        </mat-toolbar>       
+    </header>
+    <section>
+        <div class="content-area">
+             <div>
+                 <ul>
+                @for(item of menu; track item.path) {
+                    <li (click)="handleNav(item.path)">{{item.name}}</li>
+                }
+                </ul>
+            </div>
+            <div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <mat-toolbar style="background-color: rgb(20, 20, 20); color: rgb(238, 234, 234); justify-content: center;">
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+            <!--   <mat-icon>menu</mat-icon> -->
+            </button>
+            <span>Copyright &copy; 2024 Class List App all right reserve</span>
+         
+        </mat-toolbar>     
+    </footer>
+</div>
+ <!-- <div id="frame">
+    <h3>Student Form</h3>
+    <div class="row">
+        <div>
+            <div class="box">
+                <div class="content">
+                    <input id="name" type="text" placeholder="Enter your First name"
+                        style="display: flex; margin: 10px 0px;">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="box">
+                <div class="content">
+                    <input id="name" type="text" placeholder="Enter your Last name"
+                        style="display: flex; margin: 10px 0px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div>
+            <div class="box">
+                <div class="content" style="margin-left: 45px;">
+                    <label for="name">Gender: </label><br>
+                    <input type="radio" id="Male" value="Male" name="Gender"><label for="Male">Male</label>
+                    <input type="radio" id="Female" value="Female" name="Gender"><label for="Female">Female</label>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="box">
+                <div class="content">
+                    <input id="name" type="text" placeholder="Date Of Birth"
+                        style="display: flex; margin: 10px 0px;">
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="row">
+        <div>
+            <div class="box">
+                <div class="content">
+                    <input id="name" type="tel" placeholder="Tel:(+237)"
+                        style="display: flex; margin: 10px 0px;">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="box">
+                <div class="content">
+                    <input id="name" type="text" placeholder="Address"
+                        style="display: flex; margin: 10px 0px;">
+                </div>
+            </div>
+            <button style="background-color: white; border: solid black 1px; margin-left: -200px;">Back</button>
+            <button style="background-color:#4388CD; border: solid black 1px; margin-left: 300px; color: white;">Submit</button>
+
+        </div>
+
+</div> -->

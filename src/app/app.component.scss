@@ -1,0 +1,54 @@
+header{
+  padding-bottom: 1px;
+}
+body {
+  height: auto;
+}
+ footer {
+  padding-bottom: 0px;
+  padding-top: 100px;
+
+}
+.content-area {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  > div {
+    flex-grow: 1;
+
+  }
+  > div:first-child {
+    max-width: 300px;
+    background-color: #F5F5F5;
+    padding:24px;
+  }
+  > div:last-child {
+    padding: 24px;
+  }
+}
+
+
+
+
+  /* Frame for student form */
+  /*  #frame {
+    background-color: rgb(245, 242, 242);
+    justify-content: center;
+    padding: 25px;
+    width: fit-content;
+    margin: auto;
+    border-radius: 5px;
+    
+  }
+  .content {
+    margin-top: 5px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }.box {
+    margin: 0px 30px;
+  }
+  */
